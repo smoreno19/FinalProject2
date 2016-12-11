@@ -10,7 +10,8 @@
 #include "Computer.h"
 using namespace std;
 class Game {
-public:
+public://ouputs the menu for the game 
+	//returns nothing
 	void menu();
 };
 

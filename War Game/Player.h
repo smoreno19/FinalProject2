@@ -8,17 +8,18 @@
 #include "Card.h"
 #include "Deck.h"
 using namespace std;
-
+//class player
 class Player {
 protected:
+	//card class is being called 
 	Card	myCards[1];
 	int 	myScore;
 	int 	removedCard;
 public:
-
+	//consstructor
 	Player(Deck &);
 
-
+	//calls an overridden method
 	virtual Card draw() = 0;
 	void	addPoints(int);
 	int 	score();

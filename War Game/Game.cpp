@@ -12,20 +12,23 @@
 using namespace std;
 
 void Game::menu() {
+	//gives the player an option if they want to play or not
 	cout << "Welcome to the card game War. Would you like to play? (Y, N) ";
 	char choice;
 	cin >> choice;
+	//If yes, then the came continues, if no, the program ends
 	if (choice == 'Y') {
 		cout << "Would you like to know the rules before playing the game or jump right ahead? (rules, jump) ";
 		string ans;
 		cin >> ans;
-
+		//gives user the option to see rules or just start playing the game
 		if (ans == "rules") {
 			//we can have a text file that will input the rules or just write them down here
 		}
 		else if (ans == "jump") {
 
 			Deck theDeck;
+			//shuffles the deck
 			theDeck.shuffle();
 
 			Player* pp1 = 0;
@@ -35,6 +38,7 @@ void Game::menu() {
 				cout << "Is player 1 a human or a computer? ";
 				string answer;
 				cin >> answer;
+				//user answers if its human or not and calls the class depending on the answer
 				if (answer == "human")
 					pp1 = new humanPlayer(theDeck);
 				else if (answer == "computer")
@@ -87,6 +91,7 @@ void Game::menu() {
 			delete pp2;
 		}
 	}
+	//if answer is no then the program will exit
 	else if (choice == 'N') {
 		cout << "I see, well see you next time. " << endl;
 

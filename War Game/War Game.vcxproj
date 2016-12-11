@@ -148,7 +148,7 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />

@@ -7,14 +7,15 @@
 #include <ctime>
 #include "Card.h"
 using namespace std;
-
+// class deck
 class Deck {
 public:
+	//constructor and main funtions for deck
 	Deck();
 	void shuffle();
 	bool isEmpty();
 	Card draw();
-protected:
+protected: //accessed by this class
 	Card	cards[52];
 	int 	topCard;
 };
