@@ -16,7 +16,7 @@ public:
 	Card(suits, int);   // initialize a card with given values
 
 
-	int  	rank;           // hold rank of card
-	suits	suit;           // hold suit of card
+	int rank;           // hold rank of card
+	suits suit;           // hold suit of card
 };
 #endif // !CARD_H
