@@ -16,12 +16,5 @@ public:
 	// constructors
 	Card();            // initialize a card with default values
 	Card(suits, int);   // initialize a card with given values
-
-
-<<<<<<< HEAD
-=======
-	int rank;           // hold rank of card
-	suits suit;           // hold suit of card
->>>>>>> 651b005e540da312c46a2853d9491acf16ba1239
 };
 #endif // !CARD_H
