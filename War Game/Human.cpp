@@ -25,9 +25,6 @@ Card humanPlayer::draw() {
 			removedCard = 0;
 		} 
 		//player can press b to exit the game at any moment 
-		else if (answer == 'b') {
-			break;
-		}
 	}
 	//return the card removed
 	return myCards[removedCard];

@@ -12,7 +12,7 @@ using namespace std;
 class Player {
 protected:
 	//card class is being called 
-	Card	myCards[1];
+	Card	myCards[3];
 	int 	myScore;
 	int 	removedCard;
 public:

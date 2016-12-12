@@ -16,5 +16,6 @@ public:
 	// constructors
 	Card();            // initialize a card with default values
 	Card(suits, int);   // initialize a card with given values
+
 };
 #endif // !CARD_H
